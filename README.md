@@ -1,3 +1,27 @@
+# [KCC2024]BiFPN의 적용으로 RetinaFace 모델의 얼굴인식 문제 해결 및 BiRetina 개발  
+BiFPN의 적용으로 RetinaFace 모델의 얼굴인식 문제 해결 및 BiRetina 개발  
+
+# 요약
+본 연구는 고정밀 얼굴 감지를 목표로하며,기존RetinaFace 모델의 성능 한계를 극복하기 위한 새로운
+접근법을제안한다.본연구는기존의RetinaFace모델을기반으로,기존의FPN구조를Bi-DirectionalFeature
+ Pyramid Network(BiFPN)으로 대체하여 FPN의 한계를 보안한 새로운 모델인 BiRetina를 개발하였다.
+ BiRetina는 기존 모델에서 사용되는 Feature Pyramid Network(FPN)의 단순한 피쳐맵(Feature Map) 합성
+방법을개선하기위해Bi-Directional Feature Pyramid Network(BiFPN)을 도입하고, 이를 핵심 구조로삼는다.
+ BiFPN은 각 피쳐맵에 대해동적으로가중치를부여한후합성하는방식을채택함으로써,피쳐(feature)간의
+중요도를보다정교하게반영한다.이러한방식은단순한합성방법에비해피쳐정보의손실을줄이고,세밀한
+특징을더욱잘포착할수있도록한다.
+또한, 본연구에서는BiRetina의 구조를 최적화하여 레이어수를감소시키고,활성화함수로ELU를도입하며,
+ AdamW 최적화 알고리즘을 적용함으로써 모델의 효율성과 성능을 동시에 개선한다. 특히, MobileNet을
+backbone으로 사용한실험에서이러한구조적변경이얼굴감지성능을약 2%향상시키는결과를보여준다.
+이연구의결과는기존의피쳐합성방식을넘어서는새로운방향을제시하며,향후얼굴감지모델의설계와
+최적화에 있어서 중요한 기준점을 제공할 것이다. 본연구의접근법,BiRetina는얼굴감지기술의정확도와
+효율성향상에크게기여할것으로기대된다
+
+
+
+
+
+
 ## 설치
 #### clone
 1. git clone https://github.com/dohun-mat/BiRetina
