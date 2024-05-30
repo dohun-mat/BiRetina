@@ -1,4 +1,8 @@
-데이터
+## 설치
+###### clone
+1. git clone https://github.com/dohun-mat/BiRetina
+
+#####데이터
 
 1.  [WIDERFACE](http://shuoyang1213.me/WIDERFACE/WiderFace_Results.html) 데이터셋을 다운로드
 
