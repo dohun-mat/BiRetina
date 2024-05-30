@@ -4,7 +4,7 @@
 
 2. [dropbox](https://www.dropbox.com/s/7j70r3eeepe4r2g/retinaface_gt_v1.1.zip?dl=0) 에서 얼굴 경계 상자 및 5개의 얼굴 랜드마크를 다운로드
 
-3. Organise the dataset directory as follows:
+3. 데이터셋 디렉토리를 다음과 같이 구성합니다.
 
 ```Shell
   ./data/widerface/
