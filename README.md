@@ -27,32 +27,28 @@ ps: wide_val.txt에는 val 파일 이름만 포함되고 레이블 정보는 포
 Link: from [google cloud](https://drive.google.com/open?id=11UGV3nbVv1x9IC--_tK3Uxf7hA6rlbsS) or [baidu cloud](https://pan.baidu.com/s/1jIp9t30oYivrAvrgUgIoLQ) Password: ruck
 
 ## 훈련
-[google cloud](https://drive.google.com/open?id=1oZRSG0ZegbVkVwUd8wUIQx8W7yfZ_ki1)이 링크에서 MobilenetV1X0.25_pretrain.tar을 다운로드 받습니다.
+[google cloud](https://drive.google.com/open?id=1oZRSG0ZegbVkVwUd8wUIQx8W7yfZ_ki1)이 링크에서 MobilenetV1X0.25_pretrain.tar를 다운로드 받습니다.
 ```Shell
   ./weights/
-      mobilenet0.25_Final.pth
       mobilenetV1X0.25_pretrain.tar
-      Resnet50_Final.pth
 ```
-1. Before training, you can check network configuration (e.g. batch_size, min_sizes and steps etc..) in ``data/config.py and train.py``.
+1. 훈련하기 전에 에서 네트워크 구성(예: 배치_크기, 최소 크기 및 단계 등)을 확인할 수 있습니다. ``data/config.py and train.py``.
 
-2. Train the model using WIDER FACE:
+2. WIDER FACE를 사용하여 모델을 훈련합니다.
   ```Shell
-  CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --network resnet50 or
-  CUDA_VISIBLE_DEVICES=0 python train.py --network mobile0.25
+  python train.py --network mobile0.25
   ```
 
 
-## Evaluation
-### Evaluation widerface val
-1. Generate txt file
+## 평가
+1. txt 파일 생성
 ```Shell
-python test_widerface.py --trained_model weight_file --network mobile0.25 or resnet50
+python test_widerface.py --trained_model ./weights/mobilenet0.25_Final.pth --network mobile0.25
 ```
-2. Evaluate txt results. Demo come from [Here](https://github.com/wondervictor/WiderFace-Evaluation)
+2. txt 결과를 평가합니다. 데모는 [Here](https://github.com/wondervictor/WiderFace-Evaluation) 에서 제공됩니다. 
 ```Shell
 cd ./widerface_evaluate
 python setup.py build_ext --inplace
-python evaluation.py
+python evaluation.py -p ./widerface_txt -g ./eval_tools/ground_truth
 ```
 3. You can also use widerface official Matlab evaluate demo in [Here](http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/WiderFace_Results.html)
