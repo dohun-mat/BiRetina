@@ -101,7 +101,7 @@ class RetinaFace(nn.Module):
                 
             }
             self.fpn_num_filters = [out_channels, 256, 112, 160, 224, 288, 384, 384]
-            self.fpn_cell_repeats = [5, 4, 5, 6, 7, 7, 8, 8, 8]
+            self.fpn_cell_repeats = [3, 4, 5, 6, 7, 7, 8, 8, 8]
             self.compound_coef=0
             self.bifpn = nn.Sequential(
             *[BiFPN(self.fpn_num_filters[self.compound_coef],
