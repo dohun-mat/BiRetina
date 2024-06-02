@@ -73,7 +73,7 @@ python evaluation.py -p ./widerface_txt -g ./eval_tools/ground_truth
 ```
 3. [Here](http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/WiderFace_Results.html) 에서 wideface 공식 Matlab 평가 데모를 사용할 수도 있습니다.  
 
-## 기존 RetinaFace와 BiRetina모델의 이미지 감지 비교 사진(위 : Retinaface 아래 : BiRetina)  
+## 기존 RetinaFace와 BiRetina모델의 이미지 감지 비교 사진(위 : Retinaface, 아래 : BiRetina)  
 
 ![image](https://github.com/dohun-mat/BiRetina/assets/81942144/5af2b544-9d08-476c-85a9-1c71550a2dac)
 
