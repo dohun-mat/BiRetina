@@ -1,5 +1,6 @@
 # [KCC2024]BiFPN의 적용으로 RetinaFace 모델의 얼굴인식 문제 해결 및 BiRetina 개발  
-### 논문 [BiFPN의 적용으로 RetinaFace 모델의 얼굴인식 문제 해결 및 BiRetina 개발.pdf](https://github.com/user-attachments/files/15522316/biRetina_.pdf)
+### 논문 [BiFPN의 적용으로 RetinaFace 모델의 얼굴인식 문제 해결 및 BiRetina 개발.pdf](https://github.com/user-attachments/files/15525930/biRetina_.pdf)
+
 
 
 
