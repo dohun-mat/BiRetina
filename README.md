@@ -53,7 +53,7 @@ Link: from [google cloud](https://drive.google.com/open?id=11UGV3nbVv1x9IC--_tK3
       mobilenetV1X0.25_pretrain.tar
 ```
 1. 훈련하기 전에 에서 네트워크 구성(예: 배치_크기, 최소 크기 및 단계 등)을 확인할 수 있습니다.  
-   ``data/config.py and train.py``.
+   ```data/config.py and train.py```
 
 3. WIDER FACE를 사용하여 모델을 훈련합니다.
   ```Shell
